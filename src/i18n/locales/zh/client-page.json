@@ -1,0 +1,7 @@
+{
+  "title": "从 <1>{{lng}}</1> 切换到:",
+  "counter_one": "已选一项",
+  "counter_other": "已选择 {{count}}",
+  "counter_zero": "未选择",
+  "back-to-home": "回到家"
+}
