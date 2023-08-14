@@ -7,6 +7,7 @@ export async function GET() {
   if (session) {
     var url = `${process.env.END_SESSION_URL}`;
 
+    console.log(`[Logout] ${url} with ${`Bearer ${session.access_token}`}`);
     try {
       const resp = await fetch(url, {
         method: "GET",

@@ -1,4 +1,4 @@
-import NextAuth from "next-auth";
+import NextAuth, { AuthOptions } from "next-auth";
 import jwt_decode from "jwt-decode";
 
 // this will refresh an expired access token, when needed
@@ -21,7 +21,7 @@ async function refreshAccessToken(token) {
   };
 }
 
-export const authOptions = {
+export const authOptions: AuthOptions = {
   useSecureCookies: false,
   providers: [
     {
@@ -36,9 +36,6 @@ export const authOptions = {
       userinfo: "https://iam.sci-dev.live/v1/me/profile",
       profileUrl: "https://iam.sci-dev.live/v1/me/profile",
       async profile(profile, tokens) {
-        // You can use the tokens, in case you want to fetch more profile information
-        // For example several OAuth providers do not return email by default.
-        // Depending on your provider, will have tokens like `access_token`, `id_token` and or `refresh_token`
         return {
           id: profile.id,
           name: profile.name,
