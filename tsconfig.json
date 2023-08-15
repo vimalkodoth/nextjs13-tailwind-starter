@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/auth/setDynamicRoute.js", "src/lib/auth/sessionTokenAccessor.js", "src/lib/auth/sessionProviderWrapper.js", "src/app/[lng]/second-page/page.jsx"],
   "exclude": ["node_modules"]
 }

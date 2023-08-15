@@ -1,5 +1,14 @@
 ED-PROJECT
 
+## Tech Stack
+
+NextJS 13+
+TailwindCSS
+Typescript
+i18Next
+Redux Toolkit
+ImmerJS
+NextAuth
 ## Getting Started
 
 First, install & run the development server:
