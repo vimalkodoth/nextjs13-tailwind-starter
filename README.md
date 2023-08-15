@@ -1,4 +1,4 @@
-# SCILIVE - FRONTEND
+# FRONTEND
 
 ## Tech Stack
 
